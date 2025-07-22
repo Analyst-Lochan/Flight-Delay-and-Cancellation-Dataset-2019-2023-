@@ -1,0 +1,192 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Updated Header</th>
+      <th>Source Header</th>
+      <th>Data Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FL_DATE</td>
+      <td>FlightDate</td>
+      <td>object</td>
+      <td>Flight Date (yyyymmdd)</td>
+    </tr>
+    <tr>
+      <td>AIRLINE_CODE</td>
+      <td>Reporting_Airline</td>
+      <td>object</td>
+      <td>Unique Carrier Code. When the same code has been used by multiple carriers, a numeric suffix is used for earlier users, for example, PA, PA(1), PA(2). Use this field for analysis across a range of years.</td>
+    </tr>
+    <tr>
+      <td>DOT_CODE</td>
+      <td>DOT_ID_Reporting_Airline</td>
+      <td>int64</td>
+      <td>An identification number assigned by US DOT to identify a unique airline (carrier). A unique airline (carrier) is defined as one holding and reporting under the same DOT certificate regardless of its Code, Name, or holding company/corporation.</td>
+    </tr>
+    <tr>
+      <td>FL_NUMBER</td>
+      <td>Flight_Number_Reporting_Airline</td>
+      <td>int64</td>
+      <td>Flight Number</td>
+    </tr>
+    <tr>
+      <td>ORIGIN</td>
+      <td>Origin</td>
+      <td>object</td>
+      <td>Origin Airport</td>
+    </tr>
+    <tr>
+      <td>ORIGIN_CITY</td>
+      <td>OriginCityName</td>
+      <td>object</td>
+      <td>Origin Airport, City Name</td>
+    </tr>
+    <tr>
+      <td>DEST</td>
+      <td>Dest</td>
+      <td>object</td>
+      <td>Destination Airport</td>
+    </tr>
+    <tr>
+      <td>DEST_CITY</td>
+      <td>DestCityName</td>
+      <td>object</td>
+      <td>Destination Airport, City Name</td>
+    </tr>
+    <tr>
+      <td>CRS_DEP_TIME</td>
+      <td>CRSDepTime</td>
+      <td>int64</td>
+      <td>CRS Departure Time (local time: hhmm)</td>
+    </tr>
+    <tr>
+      <td>DEP_TIME</td>
+      <td>DepTime</td>
+      <td>float64</td>
+      <td>Actual Departure Time (local time: hhmm)</td>
+    </tr>
+    <tr>
+      <td>DEP_DELAY</td>
+      <td>DepDelay</td>
+      <td>float64</td>
+      <td>Difference in minutes between scheduled and actual departure time. Early departures show negative numbers.</td>
+    </tr>
+    <tr>
+      <td>TAXI_OUT</td>
+      <td>TaxiOut</td>
+      <td>float64</td>
+      <td>Taxi Out Time, in Minutes</td>
+    </tr>
+    <tr>
+      <td>WHEELS_OFF</td>
+      <td>WheelsOff</td>
+      <td>float64</td>
+      <td>Wheels Off Time (local time: hhmm)</td>
+    </tr>
+    <tr>
+      <td>WHEELS_ON</td>
+      <td>WheelsOn</td>
+      <td>float64</td>
+      <td>Wheels On Time (local time: hhmm)</td>
+    </tr>
+    <tr>
+      <td>TAXI_IN</td>
+      <td>TaxiIn</td>
+      <td>float64</td>
+      <td>Taxi In Time, in Minutes</td>
+    </tr>
+    <tr>
+      <td>CRS_ARR_TIME</td>
+      <td>CRSArrTime</td>
+      <td>int64</td>
+      <td>CRS Arrival Time (local time: hhmm)</td>
+    </tr>
+    <tr>
+      <td>ARR_TIME</td>
+      <td>ArrTime</td>
+      <td>float64</td>
+      <td>Actual Arrival Time (local time: hhmm)</td>
+    </tr>
+    <tr>
+      <td>ARR_DELAY</td>
+      <td>ArrDelay</td>
+      <td>float64</td>
+      <td>Difference in minutes between scheduled and actual arrival time. Early arrivals show negative numbers.</td>
+    </tr>
+    <tr>
+      <td>CANCELLED</td>
+      <td>Cancelled</td>
+      <td>float64</td>
+      <td>Cancelled Flight Indicator (1=Yes)</td>
+    </tr>
+    <tr>
+      <td>CANCELLATION_CODE</td>
+      <td>CancellationCode</td>
+      <td>object</td>
+      <td>Specifies The Reason For Cancellation</td>
+    </tr>
+    <tr>
+      <td>DIVERTED</td>
+      <td>Diverted</td>
+      <td>float64</td>
+      <td>Diverted Flight Indicator (1=Yes)</td>
+    </tr>
+    <tr>
+      <td>CRS_ELAPSED_TIME</td>
+      <td>CRSElapsedTime</td>
+      <td>float64</td>
+      <td>CRS Elapsed Time of Flight, in Minutes</td>
+    </tr>
+    <tr>
+      <td>ELAPSED_TIME</td>
+      <td>ActualElapsedTime</td>
+      <td>float64</td>
+      <td>Elapsed Time of Flight, in Minutes</td>
+    </tr>
+    <tr>
+      <td>AIR_TIME</td>
+      <td>AirTime</td>
+      <td>float64</td>
+      <td>Flight Time, in Minutes</td>
+    </tr>
+    <tr>
+      <td>DISTANCE</td>
+      <td>Distance</td>
+      <td>float64</td>
+      <td>Distance between airports (miles)</td>
+    </tr>
+    <tr>
+      <td>DELAY_DUE_CARRIER</td>
+      <td>CarrierDelay</td>
+      <td>float64</td>
+      <td>Carrier Delay, in Minutes</td>
+    </tr>
+    <tr>
+      <td>DELAY_DUE_WEATHER</td>
+      <td>WeatherDelay</td>
+      <td>float64</td>
+      <td>Weather Delay, in Minutes</td>
+    </tr>
+    <tr>
+      <td>DELAY_DUE_NAS</td>
+      <td>NASDelay</td>
+      <td>float64</td>
+      <td>National Air System Delay, in Minutes</td>
+    </tr>
+    <tr>
+      <td>DELAY_DUE_SECURITY</td>
+      <td>SecurityDelay</td>
+      <td>float64</td>
+      <td>Security Delay, in Minutes</td>
+    </tr>
+    <tr>
+      <td>DELAY_DUE_LATE_AIRCRAFT</td>
+      <td>LateAircraftDelay</td>
+      <td>float64</td>
+      <td>Late Aircraft Delay, in Minutes</td>
+    </tr>
+  </tbody>
+</table>
